@@ -1,0 +1,115 @@
+/* Additional Custom Styles for Sri Sri Radha Gokulanand Ashramam */
+
+/* Enhanced animations */
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes glow {
+    0%, 100% { box-shadow: 0 0 5px var(--gold); }
+    50% { box-shadow: 0 0 20px var(--gold), 0 0 30px var(--gold); }
+}
+
+/* Floating elements */
+.floating {
+    animation: float 3s ease-in-out infinite;
+}
+
+.glow {
+    animation: glow 2s ease-in-out infinite;
+}
+
+/* Enhanced button styles */
+.btn-primary {
+    background: linear-gradient(45deg, var(--primary), var(--saffron));
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 153, 51, 0.4);
+}
+
+/* Card hover effects */
+.hover-lift {
+    transition: all 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+/* Divine background patterns */
+.divine-bg {
+    background-image: 
+        radial-gradient(circle at 25% 25%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 75% 75%, rgba(255, 153, 51, 0.1) 0%, transparent 50%);
+}
+
+/* Sacred symbols */
+.sacred-symbol {
+    font-size: 2rem;
+    color: var(--gold);
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+/* Responsive improvements */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+}
+
+/* Loading animation */
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 153, 51, 0.3);
+    border-radius: 50%;
+    border-top-color: var(--primary);
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Enhanced typography */
+.sanskrit-text {
+    font-family: 'Sanskrit Text', serif;
+}
+
+.devotional-text {
+    font-style: italic;
+    color: var(--accent);
+    text-align: center;
+    margin: 1rem 0;
+}
+
+/* Special effects for important elements */
+.highlight {
+    background: linear-gradient(45deg, var(--gold), var(--primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bold;
+} 
